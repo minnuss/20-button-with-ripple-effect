@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  font-family: 'Poppins', sans-serif; // 'Montserrat', 'Roboto';
+}
+
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+// }
+
+.project {
+  background-color: #000;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    &--btn {
+      background-color: purple;
+      color: #fff;
+      border: 1px purple solid;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 20px 30px;
+      overflow: hidden;
+      margin: 10px 0;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+
+      &--circle {
+        position: absolute;
+        top: 27px;
+        left: 82px;
+
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        animation: scale 0.5s ease-out;
+      }
+    }
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  // scales quickly to 3 and then disappears because of the opacity
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
