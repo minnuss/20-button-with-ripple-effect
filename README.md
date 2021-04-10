@@ -8,6 +8,6 @@ TECHNOLOGIES USED:
 
 - HTML5
 - Google Fonts
-- Sass - Flexbox, Media Queries
+- Sass - Flexbox
 - JavaScript
 - Git
